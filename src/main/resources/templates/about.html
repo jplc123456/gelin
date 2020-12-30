@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>关于我</title>
+    <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" rel="stylesheet">
+    <link href="../static/css/me.css" rel="stylesheet">
+</head>
+<body>
+<!--导航-->
+    <nav class="ui inverted attached segment m-padded-mini m-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <img alt="" class="ui rounded image" src="../static/images/1111.jpg" style="width: 50px">
+                <h2 class="ui teal header item">格林思维英语</h2>
+                <a class="m-item item m-mobile-hide" href="#"><i class="home icon"></i>首页</a>
+                <a class="m-item item m-mobile-hide" href="#"><i class="idea icon"></i>分类</a>
+                <a class="m-item item m-mobile-hide" href="#"><i class="tags icon"></i>标签</a>
+                <a class="m-item item m-mobile-hide" href="#"><i class="clone icon"></i>归档</a>
+                <a class="active m-item item m-mobile-hide" href="#"><i class="info icon"></i>关于我</a>
+                <div class="right m-item item m-mobile-hide">
+                    <div class="ui icon inverted transparent input">
+                        <input placeholder="search..." type="text">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="ui menu toggle black icon button m-right-top m-mobile-show" href="#">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+<!--中间内容-->
+    <div class="m-container m-padded-tb-big">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <div class="eleven wide column">
+                    <div class="ui segment">
+                        <img src="../static/images/1111.jpg" alt="" class="ui rounded image">
+                    </div>
+                </div>
+                <div class="five wide column">
+                    <div class="ui top attached segment">
+                        <div class="ui header">关于我</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <p class="m-text">孙菲菲付付付付付付付付付付付付付付付付发付撒大所多</p>
+                        <p class="m-text">收发撒奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥付所所多过多所过多</p>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">编程</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">游戏</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">搞事</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">吹牛逼</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">修仙</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">1111</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">2222</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">3333</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">4444</div>
+                    </div>
+                    <div class="ui bottom attached segment">
+                        <a href="#" class="ui wechat circular icon button" data-position="right center"><i class="weixin icon"></i></a>
+                        <a href="#" class="ui qq circular icon button" data-content="524495404" data-position="bottom center"><i class="qq icon"></i></a>
+                    </div>
+                    <div class="ui wechat-qr flowing popup top left transition hidden">
+                        <img src="../static/images/erweima.jpg" alt="" class="ui rounded image" style="width: 120px">
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<!--底部被内容-->
+    <footer th:replace="_fragments :: footer" class="ui inverted attached segment m-padded-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted stackable divided grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img alt="" class="ui rounded image" src="../static/images/erweima.jpg" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">最新活动</h4>
+                    <div class="ui inverted link list">
+                    <a class="item" href="#">哈哈哈啊哈哈哈哈</a>
+                    <a class="item" href="#">哈哈哈啊哈哈哈哈</a>
+                    <a class="item" href="#">哈哈哈啊哈哈哈哈</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                    <div class="ui inverted link list">
+                    <a class="item" href="#">姓名:罗成</a>
+                    <a class="item" href="#">手机:13797051571</a>
+                    <a class="item" href="#">QQ:524495404</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">格林思维英语</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">最新活动最新活动最新活动最新活动最新活动最新活动最新活动最新活动最新活动最新活动最新活动.....</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">2020-2021</p>
+        </div>
+
+    </footer>
+
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+<script>
+    $('.menu.toggle').click(function(){
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+    $('.qq').popup();
+    $('.wechat').popup({
+        popup : $('.wechat-qr.popup'),
+        on : 'hover',
+        position : 'bottom center'
+    });
+</script>
+</body>
+</html>

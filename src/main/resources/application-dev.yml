@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/gelin?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#  mvc:
+#    static-path-pattern: /static/**
+#  resources:
+#    static-locations: classpath:static/,file:static/
+logging:
+  level:
+    root: info
+    com.glsw: debug
+  file:
+    name: log/gelin-dev.log

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>注册</title>
+    <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" rel="stylesheet">
+    <link href="../../static/css/me.css" rel="stylesheet">
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+    <div class="m-container-small " style="max-width: 30em !important;">
+        <div class="ui container">
+            <div class="ui middle aligned center aligned grid">
+                <div class="column">
+                    <h2 class="ui teal image header">
+                        <img src="../../static/images/1111.jpg" th:src="@{/images/1111.jpg}" class="ui rounded image" alt="" style="width: 250px">
+                        <div class="content" style="font-size: 1.6em">
+                            格林思维英语密码修改
+                        </div>
+                    </h2>
+                    <form action="#" class="ui large form" method="post" th:action="@{/admin/upuserpassword}">
+                        <div class="ui segment">
+                            <div class="field">
+                                <div class="ui left icon input">
+                                    <i class="lock icon"></i>
+                                    <input type="password" name="password1" placeholder="旧密码">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui left icon input">
+                                    <i class="lock icon"></i>
+                                    <input type="password" name="password2" placeholder="新密码">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui left icon input">
+                                    <i class="lock icon"></i>
+                                    <input type="password" name="password3" placeholder="确认信密码">
+                                </div>
+                            </div>
+                            <button class="ui fluid large teal submit button">确认修改</button>
+                        </div>
+                        <div class="ui error mini message"></div>
+                        <div class="ui mini negative message" th:unless="${#strings.isEmpty(message)}" th:text="${message}">sb 用户名和密码错误！</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+    $('.ui.form').form({
+        fields : {
+            password1 : {
+                identifier : 'password1',
+                rules : [{
+                    type : 'empty',
+                    prompt : '请输入旧密码'
+                }]
+            },
+            password2 : {
+                identifier : 'password2',
+                rules: [{
+                    type : 'empty',
+                    prompt: '请输入新密码'
+                }]
+            },
+            password3 : {
+                identifier : 'password3',
+                rules: [{
+                    type : 'empty',
+                    prompt: '请输入确认新密码'
+                }]
+            }
+        }
+    });
+    /*--消息提示关闭--*/
+    $('.message .close').on('click',function () {
+        $(this).closest('.message').transition('fade');
+    })
+</script>
+</body>
+</html>
