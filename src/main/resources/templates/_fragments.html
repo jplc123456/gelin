@@ -13,7 +13,7 @@
 <body>
 
 <!--导航-->
-<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-mini m-shadow-small" style="position: fixed;z-index: 9999;height: 70px">
+<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-mini m-shadow-small m-dao-xy">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <img src="../../static/images/1111.jpg" th:src="@{/images/1111.jpg}" class="ui medium circular image" alt="" style="width: 50px;height: 50px;margin-top: 5px">
@@ -23,7 +23,7 @@
             <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'" th:href="@{/tags/-1}"><i class="tags icon"></i>标签</a>
             <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'" th:href="@{/archives}"><i class="clone icon"></i>归档</a>
             <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'" th:href="@{/admin/cards}"><i class="leaf icon"></i>师资力量</a>
-            <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'" th:href="@{/admin/blogs}" th:if="${session.user} ? ${session.user.type}==1"><i class="info icon"></i>前往管理端</a>
+            <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'" th:href="@{/admin/blogs}" th:if="${session.user} ? ${session.user.type}==1"><i class="info icon"></i>前往管理端</a>
             <div class="right m-item item m-mobile-hide">
                 <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
                     <div class="ui icon inverted transparent input m-margin-tb-tiny">
@@ -32,36 +32,37 @@
                     </div>
                 </form>
             </div>
-        </div>
-    </div>
-    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
-        <i class="sidebar icon"></i>
-    </a>
-    <div class="ui center aligned inverted right m-right-top  m-item m-mobile-hide menu" th:if="${session.user}">
-        <div class="ui dropdown item">
-            <div class="text">
-                <img src="../../static/images/1111.jpg" alt="" class="ui avatar image" th:src="@{${session.user.avatar}}" style="width: 28px">
-                <span th:text="${session.user.nickname}">高某人</span>
+            <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+                <i class="sidebar icon"></i>
+            </a>
+            <div class="ui center aligned inverted secondary stackable right  m-item m-mobile-hide menu m-mobile-hide" th:if="${session.user}">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img src="../../static/images/1111.jpg" alt="" class="ui avatar image" th:src="@{${session.user.avatar}}" style="width: 28px">
+                        <span th:text="${session.user.nickname}">高某人</span>
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu ">
+                        <a href="#" th:href="@{/admin/uppswd}" class="item">修改密码</a>
+                        <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
+                    </div>
+                </div>
             </div>
-            <i class="dropdown icon"></i>
-            <div class="menu ">
-                <a href="#" th:href="@{/admin/uppswd}" class="item">修改密码</a>
-                <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
-            </div>
-        </div>
-    </div>
-    <div class="ui center aligned inverted right m-right-top  m-item m-mobile-hide menu" th:if="${session.user}==null">
-        <div class="ui dropdown item">
-            <div class="text">
-                <span>未登录</span>
-            </div>
-            <i class="dropdown icon"></i>
-            <div class="menu ">
-                <a href="#" th:href="@{/admin}" class="item">登录</a>
-                <a href="#" th:href="@{/user/register}" class="item">注册</a>
-            </div>
+            <div class="ui center aligned inverted secondary stackable right m-item m-mobile-hide menu m-mobile-hide" th:if="${session.user}==null">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <span>未登录</span>
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu ">
+                        <a href="#" th:href="@{/admin}" class="item">登录</a>
+                        <a href="#" th:href="@{/user/register}" class="item">注册</a>
+                    </div>
 
+                </div>
+            </div>
         </div>
+
     </div>
 </nav>
 

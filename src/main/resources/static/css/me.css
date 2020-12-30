@@ -165,3 +165,10 @@ body{
     padding-right: 0em !important;
 }
 }
+@media screen and (min-width: 768px) {
+.m-dao-xy{
+    position: fixed !important;
+    z-index: 9999 !important;
+    height: 70px !important;
+}
+}
