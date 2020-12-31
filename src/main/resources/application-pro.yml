@@ -12,6 +12,10 @@ spring:
     show-sql: true
   resources:
     static-locations: classpath:static/,file:static/
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 100MB
 logging:
   level:
     root: warn

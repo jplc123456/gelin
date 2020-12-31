@@ -208,10 +208,10 @@
         </div>
 
         <div class="ui text container">
-            <h1 class="ui inverted header">
+            <h1 class="ui inverted header" style="color: #fff !important;">
                 欢迎来到格林思维英语
             </h1>
-            <h2>性格决定命运，选择改变人生</h2>
+            <h2 style="color: #fff !important;">性格决定命运，选择改变人生</h2>
             <a class="ui huge primary button" th:href="@{/index}">开启格林之旅 <i class="right arrow icon"></i></a>
         </div>
 
@@ -221,10 +221,10 @@
         <div class="ui middle aligned stackable grid container">
             <div class="row">
                 <div class="eight wide column" th:each="h : ${home}">
-                    <h3 class="ui header" th:text="${h.title1}">介绍1标题</h3>
-                    <p th:text="${h.content1}">介绍1内容</p>
-                    <h3 class="ui header" th:text="${h.title2}">介绍2标题</h3>
-                    <p th:text="${h.content2}">介绍2内容</p>
+                    <h3 class="ui header" th:text="${h.title1}" style="color: #fff !important;">介绍1标题</h3>
+                    <p th:text="${h.content1}" style="color: #fff !important;">介绍1内容</p>
+                    <h3 class="ui header" th:text="${h.title2}" style="color: #fff !important;">介绍2标题</h3>
+                    <p th:text="${h.content2}" style="color: #fff !important;">介绍2内容</p>
                 </div>
                 <!--介绍图片-->
 <!--                <div class="six wide right floated column">-->
@@ -239,13 +239,13 @@
         <div class="ui equal width stackable internally celled grid">
             <div class="center aligned row">
                 <div class="column">
-                    <h3>"我们有和谐的学习氛围"</h3>
-                    <p>知识汇聚力量，汗水凝成辉煌</p>
+                    <h3 style="color: #fff !important;">"我们有和谐的学习氛围"</h3>
+                    <p style="color: #fff !important;">知识汇聚力量，汗水凝成辉煌</p>
                 </div>
                 <div class="column" th:each="c : ${card}">
-                    <h3>"我们有优秀的老师"</h3>
+                    <h3 style="color: #fff !important;">"我们有优秀的老师"</h3>
                     <p>
-                        <img src="" class="ui avatar image" th:src="@{${c.portrait}}"> <b th:text="${c.name}">Nan</b> <span th:text="${c.brief}">Chief Fun Officer Acme Toys</span>
+                        <img src="" class="ui avatar image" th:src="@{${c.portrait}}"> <b th:text="${c.name}" style="color: #fff !important;">Nan</b> <span th:text="${c.brief}" style="color: #fff !important;">Chief Fun Officer Acme Toys</span>
                     </p>
                 </div>
             </div>
@@ -254,8 +254,8 @@
 
     <div class="ui vertical stripe segment">
         <div class="ui text container" th:each="b : ${blog}">
-            <h3 class="ui header" th:text="${b.title}">Breaking The Grid, Grabs Your Attention</h3>
-            <p th:text="${b.content}">Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+            <h3 class="ui header" th:text="${b.title}" style="color: #fff !important;">Breaking The Grid, Grabs Your Attention</h3>
+            <p th:text="${b.content}" style="color: #fff !important;">Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
             <a class="ui large button" th:href="@{/blogs/{id}/(id=${b.id})}">去看一下</a>
         </div>
     </div>

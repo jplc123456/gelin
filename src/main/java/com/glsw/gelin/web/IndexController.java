@@ -40,7 +40,7 @@ public class IndexController {
     @GetMapping("/")
     public String home(@PageableDefault(size = 1,sort = {"id"},direction = Sort.Direction.DESC) Pageable pageable,Model model){
         model.addAttribute("home",homeService.listHome(pageable));
-        model.addAttribute("page",cardService.listCard(pageable));
+        model.addAttribute("card",cardService.listCard(pageable));
         model.addAttribute("blog",blogService.listBlogTop(1));
         return "home";
     }

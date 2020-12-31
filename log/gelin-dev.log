@@ -2937,3 +2937,244 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as each: "
 2020-12-31 15:42:43.085  INFO 7832 --- [http-nio-8080-exec-7] com.glsw.gelin.aspect.LogAspect          : Result : index
 2020-12-31 15:43:04.403  INFO 7832 --- [http-nio-8080-exec-8] com.glsw.gelin.aspect.LogAspect          : Request : {url='/index', ip='0:0:0:0:0:0:0:1', classMethod='com.glsw.gelin.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
 2020-12-31 15:43:04.416  INFO 7832 --- [http-nio-8080-exec-8] com.glsw.gelin.aspect.LogAspect          : Result : index
+2020-12-31 15:44:49.081  INFO 7832 --- [http-nio-8080-exec-4] com.glsw.gelin.aspect.LogAspect          : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.glsw.gelin.web.IndexController.home', args=[Page request [number: 0, size 1, sort: id: DESC], {}]}
+2020-12-31 15:44:49.108  INFO 7832 --- [http-nio-8080-exec-4] com.glsw.gelin.aspect.LogAspect          : Result : home
+2020-12-31 15:47:02.958  INFO 7832 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-31 15:47:02.964  INFO 7832 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-31 15:47:02.967  INFO 7832 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-31 15:47:02.983  INFO 7832 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-12-31 15:47:03.488  INFO 7832 --- [restartedMain] com.glsw.gelin.GelinApplication          : Starting GelinApplication using Java 1.8.0_261 on WINDOWS-3LFT8OU with PID 7832 (D:\java\gelin\target\classes started by Administrator in D:\java\gelin)
+2020-12-31 15:47:03.488 DEBUG 7832 --- [restartedMain] com.glsw.gelin.GelinApplication          : Running with Spring Boot v2.4.0, Spring v5.3.1
+2020-12-31 15:47:03.489  INFO 7832 --- [restartedMain] com.glsw.gelin.GelinApplication          : The following profiles are active: dev
+2020-12-31 15:47:03.977  INFO 7832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-31 15:47:04.038  INFO 7832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 7 JPA repository interfaces.
+2020-12-31 15:47:04.435  INFO 7832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-31 15:47:04.436  INFO 7832 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-31 15:47:04.436  INFO 7832 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-31 15:47:04.479  INFO 7832 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-31 15:47:04.479  INFO 7832 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 972 ms
+2020-12-31 15:47:04.599  INFO 7832 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-31 15:47:04.634  INFO 7832 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-31 15:47:04.646  INFO 7832 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-12-31 15:47:04.670  INFO 7832 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-12-31 15:47:04.670  INFO 7832 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-31 15:47:05.058  WARN 7832 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-31 15:47:05.178  INFO 7832 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-31 15:47:05.178  INFO 7832 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-31 15:47:05.480  INFO 7832 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-31 15:47:05.541  INFO 7832 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-31 15:47:05.876  INFO 7832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-31 15:47:05.878  INFO 7832 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-31 15:47:07.118  INFO 7832 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-31 15:47:07.124  INFO 7832 --- [restartedMain] com.glsw.gelin.GelinApplication          : Started GelinApplication in 3.753 seconds (JVM running for 2044.182)
+2020-12-31 15:47:07.128  INFO 7832 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-12-31 15:47:08.753  INFO 9856 --- [main] com.glsw.gelin.GelinApplicationTests     : Starting GelinApplicationTests using Java 1.8.0_261 on WINDOWS-3LFT8OU with PID 9856 (started by Administrator in D:\java\gelin)
+2020-12-31 15:47:08.756 DEBUG 9856 --- [main] com.glsw.gelin.GelinApplicationTests     : Running with Spring Boot v2.4.0, Spring v5.3.1
+2020-12-31 15:47:08.758  INFO 9856 --- [main] com.glsw.gelin.GelinApplicationTests     : The following profiles are active: dev
+2020-12-31 15:47:10.762  INFO 9856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-31 15:47:11.089  INFO 9856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 303 ms. Found 7 JPA repository interfaces.
+2020-12-31 15:47:13.065  INFO 9856 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-31 15:47:13.264  INFO 9856 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-31 15:47:13.522  INFO 9856 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-31 15:47:14.261  INFO 9856 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-31 15:47:15.098  WARN 9856 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-31 15:47:15.210  INFO 9856 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-31 15:47:17.186  INFO 9856 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-31 15:47:17.353  INFO 9856 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-31 15:47:17.380  INFO 9856 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-31 15:47:19.778  INFO 9856 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories��
+2020-12-31 15:47:21.399  INFO 9856 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-31 15:47:21.422  INFO 9856 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-31 15:47:23.758  INFO 9856 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-31 15:47:23.789  INFO 9856 --- [main] com.glsw.gelin.GelinApplicationTests     : Started GelinApplicationTests in 15.789 seconds (JVM running for 19.185)
+2020-12-31 15:47:24.408  INFO 9856 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-31 15:47:24.414  INFO 9856 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-31 15:47:24.415  INFO 9856 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-31 15:47:26.242  INFO 9856 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-12-31 16:07:32.976  INFO 7832 --- [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-31 16:07:32.977  INFO 7832 --- [Thread-31] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-31 16:07:32.978  INFO 7832 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-12-31 16:07:32.994  INFO 7832 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-12-31 16:07:33.359  INFO 7832 --- [restartedMain] com.glsw.gelin.GelinApplication          : Starting GelinApplication using Java 1.8.0_261 on WINDOWS-3LFT8OU with PID 7832 (D:\java\gelin\target\classes started by Administrator in D:\java\gelin)
+2020-12-31 16:07:33.359 DEBUG 7832 --- [restartedMain] com.glsw.gelin.GelinApplication          : Running with Spring Boot v2.4.0, Spring v5.3.1
+2020-12-31 16:07:33.360  INFO 7832 --- [restartedMain] com.glsw.gelin.GelinApplication          : The following profiles are active: dev
+2020-12-31 16:07:33.814  INFO 7832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-31 16:07:33.905  INFO 7832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 7 JPA repository interfaces.
+2020-12-31 16:07:34.485  INFO 7832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-31 16:07:34.486  INFO 7832 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-31 16:07:34.487  INFO 7832 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-31 16:07:34.542  INFO 7832 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-31 16:07:34.543  INFO 7832 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1179 ms
+2020-12-31 16:07:34.820  INFO 7832 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-31 16:07:34.883  INFO 7832 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-31 16:07:34.899  INFO 7832 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-12-31 16:07:34.933  INFO 7832 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-12-31 16:07:34.933  INFO 7832 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-31 16:07:35.668  INFO 7832 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-31 16:07:35.713  INFO 7832 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-31 16:07:35.637  WARN 7832 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-31 16:07:36.335  INFO 7832 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-31 16:07:36.401  INFO 7832 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-31 16:07:36.746  INFO 7832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-31 16:07:36.747  INFO 7832 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-31 16:07:37.577  INFO 7832 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-31 16:07:37.582  INFO 7832 --- [restartedMain] com.glsw.gelin.GelinApplication          : Started GelinApplication in 4.278 seconds (JVM running for 3274.639)
+2020-12-31 16:07:37.584  INFO 7832 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-12-31 16:07:39.437  INFO 7832 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-31 16:07:39.437  INFO 7832 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-31 16:07:39.438  INFO 7832 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-12-31 16:07:39.443  INFO 7832 --- [http-nio-8080-exec-1] com.glsw.gelin.aspect.LogAspect          : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.glsw.gelin.web.IndexController.home', args=[Page request [number: 0, size 1, sort: id: DESC], {}]}
+2020-12-31 16:07:39.486  INFO 7832 --- [http-nio-8080-exec-1] com.glsw.gelin.aspect.LogAspect          : Result : home
+2020-12-31 16:08:16.246  INFO 7832 --- [http-nio-8080-exec-9] com.glsw.gelin.aspect.LogAspect          : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.glsw.gelin.web.IndexController.home', args=[Page request [number: 0, size 1, sort: id: DESC], {}]}
+2020-12-31 16:08:16.270  INFO 7832 --- [http-nio-8080-exec-9] com.glsw.gelin.aspect.LogAspect          : Result : home
+2020-12-31 16:08:52.773  INFO 7832 --- [http-nio-8080-exec-6] com.glsw.gelin.aspect.LogAspect          : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.glsw.gelin.web.IndexController.home', args=[Page request [number: 0, size 1, sort: id: DESC], {}]}
+2020-12-31 16:08:52.797  INFO 7832 --- [http-nio-8080-exec-6] com.glsw.gelin.aspect.LogAspect          : Result : home
+2020-12-31 16:09:26.032  INFO 12588 --- [restartedMain] com.glsw.gelin.GelinApplication          : Starting GelinApplication using Java 1.8.0_261 on WINDOWS-3LFT8OU with PID 12588 (D:\java\gelin\target\classes started by Administrator in D:\java\gelin)
+2020-12-31 16:09:26.040 DEBUG 12588 --- [restartedMain] com.glsw.gelin.GelinApplication          : Running with Spring Boot v2.4.0, Spring v5.3.1
+2020-12-31 16:09:26.041  INFO 12588 --- [restartedMain] com.glsw.gelin.GelinApplication          : The following profiles are active: dev
+2020-12-31 16:09:26.279  INFO 12588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-31 16:09:26.280  INFO 12588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-31 16:09:27.479  INFO 12588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-31 16:09:27.648  INFO 12588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153 ms. Found 7 JPA repository interfaces.
+2020-12-31 16:09:28.954  INFO 12588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-31 16:09:28.968  INFO 12588 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-31 16:09:28.969  INFO 12588 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-31 16:09:29.224  INFO 12588 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-31 16:09:29.224  INFO 12588 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2941 ms
+2020-12-31 16:09:29.481  INFO 12588 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-31 16:09:29.575  INFO 12588 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-31 16:09:29.682  INFO 12588 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-31 16:09:29.971  INFO 12588 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-31 16:09:30.015  WARN 12588 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-31 16:09:30.220  INFO 12588 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-31 16:09:30.791  INFO 12588 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-31 16:09:31.095  INFO 12588 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-31 16:09:31.142  INFO 12588 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-31 16:09:31.815  INFO 12588 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-31 16:09:31.905  INFO 12588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-31 16:09:31.910  INFO 12588 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-31 16:09:32.975  INFO 12588 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-31 16:09:32.989  INFO 12588 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-31 16:09:34.417  INFO 12588 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-31 16:09:34.430  INFO 12588 --- [restartedMain] com.glsw.gelin.GelinApplication          : Started GelinApplication in 9.8 seconds (JVM running for 12.27)
+2020-12-31 16:09:39.515  INFO 12588 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-31 16:09:39.516  INFO 12588 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-31 16:09:39.518  INFO 12588 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-12-31 16:09:42.589  INFO 12588 --- [http-nio-8080-exec-1] com.glsw.gelin.aspect.LogAspect          : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.glsw.gelin.web.IndexController.home', args=[Page request [number: 0, size 1, sort: id: DESC], {}]}
+2020-12-31 16:10:00.807  INFO 12588 --- [http-nio-8080-exec-1] com.glsw.gelin.aspect.LogAspect          : Result : home
+2020-12-31 16:10:02.511  INFO 12588 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-31 16:10:02.515  INFO 12588 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-31 16:10:02.519  INFO 12588 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-31 16:10:02.538  INFO 12588 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-12-31 16:10:12.915  INFO 12908 --- [restartedMain] com.glsw.gelin.GelinApplication          : Starting GelinApplication using Java 1.8.0_261 on WINDOWS-3LFT8OU with PID 12908 (D:\java\gelin\target\classes started by Administrator in D:\java\gelin)
+2020-12-31 16:10:12.922 DEBUG 12908 --- [restartedMain] com.glsw.gelin.GelinApplication          : Running with Spring Boot v2.4.0, Spring v5.3.1
+2020-12-31 16:10:12.922  INFO 12908 --- [restartedMain] com.glsw.gelin.GelinApplication          : The following profiles are active: dev
+2020-12-31 16:10:13.083  INFO 12908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-31 16:10:13.084  INFO 12908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-31 16:10:16.000  INFO 12908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-31 16:10:16.394  INFO 12908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 367 ms. Found 7 JPA repository interfaces.
+2020-12-31 16:10:18.168  INFO 11124 --- [restartedMain] com.glsw.gelin.GelinApplication          : Starting GelinApplication using Java 1.8.0_261 on WINDOWS-3LFT8OU with PID 11124 (D:\java\gelin\target\classes started by Administrator in D:\java\gelin)
+2020-12-31 16:10:18.194 DEBUG 11124 --- [restartedMain] com.glsw.gelin.GelinApplication          : Running with Spring Boot v2.4.0, Spring v5.3.1
+2020-12-31 16:10:18.195  INFO 11124 --- [restartedMain] com.glsw.gelin.GelinApplication          : The following profiles are active: dev
+2020-12-31 16:10:18.362  INFO 11124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-31 16:10:18.363  INFO 11124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-31 16:10:20.259  INFO 12908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-31 16:10:20.285  INFO 12908 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-31 16:10:20.286  INFO 12908 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-31 16:10:20.703  INFO 11124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-31 16:10:20.713  INFO 12908 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-31 16:10:20.714  INFO 12908 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7628 ms
+2020-12-31 16:10:20.888  INFO 11124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 167 ms. Found 7 JPA repository interfaces.
+2020-12-31 16:10:21.093  INFO 12908 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-31 16:10:21.226  INFO 12908 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-31 16:10:21.439  INFO 12908 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-31 16:10:21.905  INFO 12908 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-31 16:10:22.049  WARN 12908 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-31 16:10:22.397  INFO 12908 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-31 16:10:23.685  INFO 12908 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-31 16:10:23.742  INFO 12908 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-31 16:10:23.764  INFO 11124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-31 16:10:23.784  INFO 11124 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-31 16:10:23.785  INFO 11124 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-31 16:10:23.806  INFO 12908 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-31 16:10:24.175  INFO 11124 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-31 16:10:24.175  INFO 11124 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5810 ms
+2020-12-31 16:10:24.723  INFO 11124 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-31 16:10:24.895  INFO 11124 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-31 16:10:25.019  INFO 11124 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-31 16:10:25.373  INFO 11124 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-31 16:10:25.423  WARN 11124 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-31 16:10:25.520  INFO 12908 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-31 16:10:25.671  INFO 11124 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-31 16:10:25.694  INFO 12908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-31 16:10:25.701  INFO 12908 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-31 16:10:26.792  INFO 11124 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-31 16:10:26.909  INFO 11124 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-31 16:10:26.958  INFO 11124 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-31 16:10:27.002  INFO 12908 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-31 16:10:27.029  INFO 12908 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-31 16:10:28.188  WARN 11124 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-12-31 16:10:28.287  WARN 11124 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2020-12-31 16:10:28.292  INFO 11124 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-31 16:10:29.122  INFO 11124 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-31 16:10:29.135  INFO 11124 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-31 16:10:29.139  INFO 11124 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-31 16:10:29.142  INFO 11124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-31 16:10:29.225  INFO 12908 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-31 16:10:29.238  INFO 12908 --- [restartedMain] com.glsw.gelin.GelinApplication          : Started GelinApplication in 17.774 seconds (JVM running for 20.346)
+2020-12-31 16:10:29.594  INFO 11124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-12-31 16:10:29.597  INFO 11124 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-12-31 16:10:29.620  INFO 11124 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-31 16:10:29.665 ERROR 11124 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2020-12-31 16:10:41.282  INFO 12908 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-31 16:10:41.289  INFO 12908 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-31 16:10:41.294  INFO 12908 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-31 16:10:41.505  INFO 12908 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-12-31 16:10:49.460  INFO 11456 --- [restartedMain] com.glsw.gelin.GelinApplication          : Starting GelinApplication using Java 1.8.0_261 on WINDOWS-3LFT8OU with PID 11456 (D:\java\gelin\target\classes started by Administrator in D:\java\gelin)
+2020-12-31 16:10:49.464 DEBUG 11456 --- [restartedMain] com.glsw.gelin.GelinApplication          : Running with Spring Boot v2.4.0, Spring v5.3.1
+2020-12-31 16:10:49.464  INFO 11456 --- [restartedMain] com.glsw.gelin.GelinApplication          : The following profiles are active: dev
+2020-12-31 16:10:49.619  INFO 11456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-31 16:10:49.619  INFO 11456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-31 16:10:50.888  INFO 11456 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-31 16:10:51.017  INFO 11456 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 7 JPA repository interfaces.
+2020-12-31 16:10:52.105  INFO 11456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-31 16:10:52.116  INFO 11456 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-31 16:10:52.116  INFO 11456 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-31 16:10:52.291  INFO 11456 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-31 16:10:52.291  INFO 11456 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2670 ms
+2020-12-31 16:10:52.618  INFO 11456 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-31 16:10:52.690  INFO 11456 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-31 16:10:52.758  INFO 11456 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-31 16:10:52.983  INFO 11456 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-31 16:10:53.020  WARN 11456 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-31 16:10:53.136  INFO 11456 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-31 16:10:53.644  INFO 11456 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-31 16:10:53.826  INFO 11456 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-31 16:10:53.860  INFO 11456 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-31 16:10:54.478  INFO 11456 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-31 16:10:54.551  INFO 11456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-31 16:10:54.554  INFO 11456 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-31 16:10:55.312  INFO 11456 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-31 16:10:55.322  INFO 11456 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-31 16:10:56.596  INFO 11456 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-31 16:10:56.609  INFO 11456 --- [restartedMain] com.glsw.gelin.GelinApplication          : Started GelinApplication in 8.147 seconds (JVM running for 9.931)
+2020-12-31 16:11:00.041  INFO 11456 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-31 16:11:00.042  INFO 11456 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-31 16:11:00.043  INFO 11456 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-12-31 16:11:00.089  INFO 11456 --- [http-nio-8080-exec-1] com.glsw.gelin.aspect.LogAspect          : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.glsw.gelin.web.IndexController.home', args=[Page request [number: 0, size 1, sort: id: DESC], {}]}
+2020-12-31 16:11:00.291  INFO 11456 --- [http-nio-8080-exec-1] com.glsw.gelin.aspect.LogAspect          : Result : home
