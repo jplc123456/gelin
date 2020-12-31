@@ -60,7 +60,7 @@ public class LoginController {
         }else{
             user1.setPassword(MD5Utils.code(password2));
             userService.updatePassword(user1);
-            return "redirect:/";
+            return "redirect:/index";
         }
 
     }
@@ -77,7 +77,7 @@ public class LoginController {
             if (user.getType() == 1){
                 return "admin/index";
             }else {
-                return "redirect:/";
+                return "redirect:/index";
             }
         }else{
             attributes.addFlashAttribute("message","用户名和密码错误！");

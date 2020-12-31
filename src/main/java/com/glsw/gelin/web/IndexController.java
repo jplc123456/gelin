@@ -1,8 +1,6 @@
 package com.glsw.gelin.web;
 
-import com.glsw.gelin.service.BlogService;
-import com.glsw.gelin.service.TagService;
-import com.glsw.gelin.service.TypeService;
+import com.glsw.gelin.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -33,8 +31,22 @@ public class IndexController {
     @Autowired
     private TagService tagService;
 
+    @Autowired
+    private HomeService homeService;
+
+    @Autowired
+    private CardService cardService;
 
     @GetMapping("/")
+    public String home(@PageableDefault(size = 1,sort = {"id"},direction = Sort.Direction.DESC) Pageable pageable,Model model){
+        model.addAttribute("home",homeService.listHome(pageable));
+        model.addAttribute("page",cardService.listCard(pageable));
+        model.addAttribute("blog",blogService.listBlogTop(1));
+        return "home";
+    }
+
+
+    @GetMapping("/index")
     public String index(@PageableDefault(size = 10,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable,
                         Model model){
         model.addAttribute("page",blogService.listBlog(pageable));

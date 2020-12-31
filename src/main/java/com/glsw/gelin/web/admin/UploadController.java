@@ -66,6 +66,6 @@ public class UploadController {
 
         }
         //生成响应 : 跳转去用户详情页面
-        return "redirect:/";
+        return "redirect:/index";
     }
 }

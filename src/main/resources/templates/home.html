@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Site Properties -->
+    <title>Homepage - Semantic</title>
+    <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/components/reset.css">
+    <link rel="stylesheet" type="text/css" href="../static/components/site.css">
+    <link rel="stylesheet" type="text/css" href="../static/components/container.css">
+    <link rel="stylesheet" type="text/css" href="../static/components/grid.css">
+    <link rel="stylesheet" type="text/css" href="../static/components/header.css">
+    <link rel="stylesheet" type="text/css" href="../static/components/image.css">
+    <link rel="stylesheet" type="text/css" href="../static/components/menu.css">
+    <link rel="stylesheet" type="text/css" href="../static/components/divider.css">
+    <link rel="stylesheet" type="text/css" href="../static/components/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="../static/components/segment.css">
+    <link rel="stylesheet" type="text/css" href="../static/components/button.css">
+    <link rel="stylesheet" type="text/css" href="../static/components/list.css">
+    <link rel="stylesheet" type="text/css" href="../static/components/icon.css">
+    <link rel="stylesheet" type="text/css" href="../static/components/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="../static/components/transition.css">
+    <style type="text/css">
+        .hidden.menu {
+            display: none;
+        }
+
+        .masthead.segment {
+            min-height: 700px;
+            padding: 1em 0em;
+        }
+        .masthead .logo.item img {
+            margin-right: 1em;
+        }
+        .masthead .ui.menu .ui.button {
+            margin-left: 0.5em;
+        }
+        .masthead h1.ui.header {
+            margin-top: 3em;
+            margin-bottom: 0em;
+            font-size: 4em;
+            font-weight: normal;
+        }
+        .masthead h2 {
+            font-size: 1.7em;
+            font-weight: normal;
+        }
+
+        .ui.vertical.stripe {
+            padding: 8em 0em;
+        }
+        .ui.vertical.stripe h3 {
+            font-size: 2em;
+        }
+        .ui.vertical.stripe .button + h3,
+        .ui.vertical.stripe p + h3 {
+            margin-top: 3em;
+        }
+        .ui.vertical.stripe .floated.image {
+            clear: both;
+        }
+        .ui.vertical.stripe p {
+            font-size: 1.33em;
+        }
+        .ui.vertical.stripe .horizontal.divider {
+            margin: 3em 0em;
+        }
+
+        .quote.stripe.segment {
+            padding: 0em;
+        }
+        .quote.stripe.segment .grid .column {
+            padding-top: 5em;
+            padding-bottom: 5em;
+        }
+
+        .footer.segment {
+            padding: 5em 0em;
+        }
+
+        .secondary.pointing.menu .toc.item {
+            display: none;
+        }
+
+        /*背景视频*/
+        .full-screen-video {
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            min-width: 100% !important;
+            min-height: 100% !important;
+            width: auto !important;
+            height: auto !important;
+            z-index: -100 !important;
+            -webkit-transform: translateX(-50%) translateY(-50%) !important;
+            transform: translateX(-50%) translateY(-50%) !important;
+            -webkit-transition: 1s opacity !important;
+            transition: 1s opacity !important;
+        }
+
+        .video-container{
+            position: fixed !important;
+            width: 100% !important;
+            height: 100% !important;
+            overflow: hidden !important;
+            z-index: -100 !important;
+        }
+
+        .video-container:before{
+            content: "" !important;
+            position: absolute !important;
+            width: 100% !important;
+            height: 100% !important;
+            display: block !important;
+            z-index: -1 !important;
+            top: 0 !important;
+            left: 0 !important;
+            background: rgba(25,29,34,.65) !important;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .ui.fixed.menu {
+                display: none !important;
+            }
+            .secondary.pointing.menu .item,
+            .secondary.pointing.menu .menu {
+                display: none;
+            }
+            .secondary.pointing.menu .toc.item {
+                display: block;
+            }
+            .masthead.segment {
+                min-height: 350px;
+            }
+            .masthead h1.ui.header {
+                font-size: 2em;
+                margin-top: 1.5em;
+            }
+            .masthead h2 {
+                margin-top: 0.5em;
+                font-size: 1.5em;
+            }
+        }
+    </style>
+
+
+</head>
+<body class="pushable">
+
+<!-- Following Menu -->
+<div class="ui large top fixed menu transition hidden">
+    <div class="ui right aligned container" th:if="${session.user}">
+        <div class="ui right aligned dropdown item">
+            <div class="text">
+                <img src="../../static/images/1111.jpg" alt="" class="ui avatar image" th:src="@{${session.user.avatar}}" style="width: 28px">
+                <span th:text="${session.user.nickname}">高某人</span>
+            </div>
+            <i class="dropdown icon"></i>
+            <div class="menu ">
+                <a href="#" th:href="@{/admin/uppswd}" class="item">修改密码</a>
+                <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
+            </div>
+        </div>
+    </div>
+    <div class="ui container" th:if="${session.user}==null">
+        <div class="right menu">
+            <div class="item">
+                <a class="ui button" th:href="@{/admin}">登录</a>
+            </div>
+            <div class="item">
+                <a class="ui primary button" th:href="@{/user/register}">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Page Contents -->
+<div class="pusher">
+    <div class="ui  vertical masthead center aligned segment" style="padding-top: 0px !important;">
+        <div class="video-container" th:each="h : ${home}">
+            <video class="full-screen-video" poster="__ROOT__/Themes/tdt/Asset/images/loginbg.jpg" id="bgvid" playsinline="" autoplay="" muted="" loop="">
+                <source src="" th:src="${h.publicityVideo}" type="video/mp4">
+            </video>
+        </div>
+        <div class="ui right aligned container" th:if="${session.user}">
+            <div class="ui dropdown item">
+                <div class="text">
+                    <img src="../../static/images/1111.jpg" alt="" class="ui avatar image" th:src="@{${session.user.avatar}}" style="width: 28px">
+                    <span th:text="${session.user.nickname}">高某人</span>
+                </div>
+                <i class="dropdown icon"></i>
+                <div class="menu ">
+                    <a href="#" th:href="@{/admin/uppswd}" class="item">修改密码</a>
+                    <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
+                </div>
+            </div>
+        </div>
+        <div class="ui right aligned container" th:if="${session.user}==null">
+            <div class="ui large secondary inverted pointing">
+                <div class="right item">
+                    <a class="ui inverted button" th:href="@{/admin}">登录</a>
+                    <a class="ui inverted button" th:href="@{/user/register}">注册</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui text container">
+            <h1 class="ui inverted header">
+                欢迎来到格林思维英语
+            </h1>
+            <h2>性格决定命运，选择改变人生</h2>
+            <a class="ui huge primary button" th:href="@{/index}">开启格林之旅 <i class="right arrow icon"></i></a>
+        </div>
+
+    </div>
+
+    <div class="ui vertical stripe segment">
+        <div class="ui middle aligned stackable grid container">
+            <div class="row">
+                <div class="eight wide column" th:each="h : ${home}">
+                    <h3 class="ui header" th:text="${h.title1}">介绍1标题</h3>
+                    <p th:text="${h.content1}">介绍1内容</p>
+                    <h3 class="ui header" th:text="${h.title2}">介绍2标题</h3>
+                    <p th:text="${h.content2}">介绍2内容</p>
+                </div>
+                <!--介绍图片-->
+<!--                <div class="six wide right floated column">-->
+<!--                    <img src="" class="ui large bordered rounded image">-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ui vertical stripe quote segment">
+        <div class="ui equal width stackable internally celled grid">
+            <div class="center aligned row">
+                <div class="column">
+                    <h3>"我们有和谐的学习氛围"</h3>
+                    <p>知识汇聚力量，汗水凝成辉煌</p>
+                </div>
+                <div class="column" th:each="c : ${card}">
+                    <h3>"我们有优秀的老师"</h3>
+                    <p>
+                        <img src="" class="ui avatar image" th:src="@{${c.portrait}}"> <b th:text="${c.name}">Nan</b> <span th:text="${c.brief}">Chief Fun Officer Acme Toys</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui vertical stripe segment">
+        <div class="ui text container" th:each="b : ${blog}">
+            <h3 class="ui header" th:text="${b.title}">Breaking The Grid, Grabs Your Attention</h3>
+            <p th:text="${b.content}">Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+            <a class="ui large button" th:href="@{/blogs/{id}/(id=${b.id})}">去看一下</a>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="../static/components/visibility.js"></script>
+<script src="../static/components/sidebar.js"></script>
+<script src="../static/components/transition.js"></script>
+<script>
+    $(document)
+        .ready(function() {
+
+            // fix menu when passed
+            $('.masthead')
+                .visibility({
+                    once: false,
+                    onBottomPassed: function() {
+                        $('.fixed.menu').transition('fade in');
+                    },
+                    onBottomPassedReverse: function() {
+                        $('.fixed.menu').transition('fade out');
+                    }
+                })
+            ;
+
+            // create sidebar and attach to menu open
+            $('.ui.sidebar')
+                .sidebar('attach events', '.toc.item')
+            ;
+
+        })
+    ;
+
+    $('.ui.dropdown').dropdown({
+        on : 'hover'
+    });
+</script>
+</body>
+</html>

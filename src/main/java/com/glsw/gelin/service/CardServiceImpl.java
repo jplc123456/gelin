@@ -41,7 +41,7 @@ public class CardServiceImpl implements CardService{
     public Page<Card> listCardAndName( String name,Pageable pageable) {
         return cardRepository.findSearch(name,pageable);
     }
-
+    @Transactional
     @Override
     public Card saveCard(Card card) {
         if (card.getId() == null){
